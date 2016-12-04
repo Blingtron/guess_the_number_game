@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -1.933
+TNS   : -48.465
+
+Type  : Slow 1200mV 85C Model Setup 'Guess_button'
+Slack : -0.998
+TNS   : -4.444
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : -0.088
+TNS   : -0.088
+
+Type  : Slow 1200mV 85C Model Hold 'Guess_button'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -58.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Guess_button'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -1.604
+TNS   : -39.950
+
+Type  : Slow 1200mV 0C Model Setup 'Guess_button'
+Slack : -0.790
+TNS   : -3.200
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : -0.065
+TNS   : -0.065
+
+Type  : Slow 1200mV 0C Model Hold 'Guess_button'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -58.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Guess_button'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -0.635
+TNS   : -10.285
+
+Type  : Fast 1200mV 0C Model Setup 'Guess_button'
+Slack : -0.109
+TNS   : -0.327
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : -0.146
+TNS   : -0.328
+
+Type  : Fast 1200mV 0C Model Hold 'Guess_button'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -61.059
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Guess_button'
+Slack : -3.000
+TNS   : -12.062
+
+------------------------------------------------------------

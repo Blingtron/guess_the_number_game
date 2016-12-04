@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at guess_the_number.v(12): object "neg" differs only in case from object "NEG" in the same scope
+Warning (10268): Verilog HDL information at outputs.v(10): always construct contains both blocking and non-blocking assignments

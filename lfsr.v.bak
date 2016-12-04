@@ -1,0 +1,15 @@
+module lfsr (L, R, Clock, Q, state);
+	parameter n=10;
+	input Clock, L;
+	input [2:0] state;
+	input [0:n-1] R;
+	output reg [0:n-1] Q;
+	always@(posedge Clock) begin
+		if (state == 0) begin
+			if(L)
+				Q <= R;
+			else
+				Q <= { Q[n-1] ^ Q[n-3], Q[0:n-2] };
+		end
+	end
+endmodule

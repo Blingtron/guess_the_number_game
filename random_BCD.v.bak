@@ -1,0 +1,11 @@
+module random_BCD(Q, rnd, state, flag);
+	input [3:0]Q, state;
+	output rnd, flag;
+	if (state == 0) begin
+		if (Q < 3'd9) begin 
+			rnd <= Q;
+			flag <= 1;
+		end
+		else flag = 0;
+	end
+endmodule // random_BCD

@@ -1,0 +1,25 @@
+module buttonPress(Clock, Reset, guess, Start_button, Guess_button, state, random);
+	input Clock, Reset, Start_button, Guess_button;
+	input [9:0] guess, random;
+	output reg [2:0] state;
+	
+	always @(posedge Clock) begin
+		if (~Reset) begin
+			state <= 0;
+		end
+		else if (~Start_button) begin
+			state <= 1;
+		end
+		else if (~Guess_button) begin
+			if (random > guess) begin
+				state <= 2; // Low
+			end
+			else if (random < guess) begin
+				state <= 3; // High
+			end
+			else if (random == guess) begin
+				state <= 4; // Hit
+			end
+		end
+	end
+endmodule
