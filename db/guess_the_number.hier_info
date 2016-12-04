@@ -405,6 +405,14 @@ rdm1[3] => LessThan2.IN5
 neg => always0.IN1
 neg => LessThan0.IN2
 neg => state.OUTPUTSELECT
+count0[0] => always0.IN0
+count0[1] => always0.IN0
+count0[2] => always0.IN0
+count0[3] => always0.IN0
+count1[0] => always0.IN1
+count1[1] => always0.IN1
+count1[2] => always0.IN1
+count1[3] => always0.IN1
 
 
 |guess_the_number|encoder_7seg:ss0

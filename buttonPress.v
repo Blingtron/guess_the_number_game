@@ -1,7 +1,7 @@
-module buttonPress(Clock, Reset, guess, Start_button, Guess_button, state, rdm0, rdm1, neg);
+module buttonPress(Clock, Reset, guess, Start_button, Guess_button, state, rdm0, rdm1, neg, count0, count1);
 	input Clock, Reset, Start_button, Guess_button;
 	input [9:0] guess;
-	input [3:0] rdm0, rdm1;
+	input [3:0] rdm0, rdm1, count0, count1;
 	input neg;
 	output reg [2:0] state;
 	
@@ -10,10 +10,14 @@ module buttonPress(Clock, Reset, guess, Start_button, Guess_button, state, rdm0,
 			state <= 0;
 		end
 		else if (~Start_button) begin
-			state <= 1;
+			if(count0|count1) begin
+				state <= 4;
+			end
+			else begin
+				state <= 1;
+			end
 		end
 		else if (~Guess_button) begin
-		
 			if (neg != guess[9]) begin
 				if (neg > guess[9]) // random is neg, guess is pos
 					state <= 3;

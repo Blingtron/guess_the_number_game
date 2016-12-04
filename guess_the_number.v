@@ -19,7 +19,7 @@ module guess_the_number(Clock, Reset, Start_button, Guess_button, switch, led, y
 	
 	countGuesses G1 (Reset, Guess_button, count0, count1);
 	outputs O1 (state, Clock, neg, rdm0, rdm1, count0, count1, OUT0, OUT1, OUT2, OUT3, led);
-	buttonPress B1 (Clock, Reset, switch, Start_button, Guess_button, state, rdm0, rdm1, neg);
+	buttonPress B1 (Clock, Reset, switch, Start_button, Guess_button, state, rdm0, rdm1, neg, count0, count1);
 	
 	
 	encoder_7seg ss0 (OUT0, y0);
